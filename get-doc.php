@@ -109,6 +109,18 @@ function writePDF($week, $timestamp, $pdf) {
         $pdf->SetFontSize(11.5);
         $pdf->SetXY(29.45,71.52 + ($key*5.7));
         $pdf->Write(0, utf8_decode($value));
+
+        if ($contents[$key+1] == null) {
+            //Content Bullet Point
+            $pdf->SetXY(23.1,72.1+(($key+1)*5.6));
+            $pdf->SetFontSize(20.5);
+            $pdf->Write(0, "\x95");
+
+            //Content
+            $pdf->SetFontSize(11.5);
+            $pdf->SetXY(29.45,71.52 + (($key+1)*5.7));
+            $pdf->Write(0, utf8_decode("Schreiben des Berichtsheftes"));
+        }
     }
 }
 
