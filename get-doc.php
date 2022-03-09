@@ -1,9 +1,9 @@
 <?php
 use setasign\Fpdi\Fpdi;
 
-include('FPDF/fpdf.php');
-include('FPDI/autoload.php');
-include('GRID/grid.php');
+include('./FPDF/fpdf.php');
+include('./FPDI/autoload.php');
+include('./GRID/grid.php');
 
 
 
