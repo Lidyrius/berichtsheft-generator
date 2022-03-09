@@ -1,10 +1,9 @@
 Docker 
-Website “Lite” Relaunch (CSS Anpassungen)
+Website "Lite" Relaunch (CSS Anpassungen)
 website crawlen mit Selenium und Python
-Cookiebot implementierung mit Google Tag Manager
 Typo3 Lite Update
 Server Daten aufräumen.
-Anderer Abteilung “Dev” näher bringen.
+Anderer Abteilung "Dev" näher bringen.
 Flutter 2 Dokumentation schreiben 
 Anpassung einer Website mit neuen Styles 
 Überschreiben von hardcoded Strings
@@ -13,23 +12,18 @@ Website crawler
 Cookiebot umsetzen bei Websiten
 Pflege von Sociallinks im Backend
 Erstellung von Benutzerkonten mit Rechtevergabe
-Anpassung einer Website mit neuen Styles 
 Einbau eines Facebook Buttons bei einem Kontaktformular.
 Typo3 Aufwandseinschätzung
-SMTP Server Debuggen
-Anpassung einer Website mit neuen Styles 
-DEV Persona Bestimmung 
+Server Debuggen
 Domains kündigen
 Docker Probleme beheben
 Navigation bug fixing
 weitere Bugfixes für die gleiche Website
 Aufwandsschätzung
 swiper.js einbauen
-Finalisierung Akkordeon
 Aufwandseinschätzung
 Google Maps Bug fixen
-Finalisierung Button und Links
-HTML5 Banner
+Button und Links einbauen
 Docker Probleme beheben
 HTML Bricks mit Twig umsetzen
 Anpassung Sidebar 
@@ -38,27 +32,24 @@ Bildelemente off-grid erstellen
 Buttons und Links anpassen
 CSS Styles anwenden
 Kontakformular anpassung 
-Finalisierung des Typo3 Updates
-Bilder Typo3 Bugfixing
+Typo3 Updates
+Typo3 Bugfixing
 Typo3 Instanz reparieren
 Händisches pflegen von Navigationen
 Bug Fixing
 Einbauen einer SEO Optimierung
 Kontaktformular anpassen
-Cookiebot einbindung mit Google Tag manager
 Website korrekturen
-PHP Storm anpassen
-Finalisierung des Typo3 Upgrades
-Zweites Typo3 Upgrade
 Debugging
 Mail Versand Fehler beheben
 Logo anpassung auf Website
 Neue Pimcore instanz aufsetzen
 Aufwandseinschätzung
 Umsetzung eines Styleguides
-Aufbau Kamera
+Bugfixing
 Lokale Umgebung aufsetzen
 Anpassung eines Footers
+Schulungen
 Kontaktieren eines Kunden um Zugangsdaten für einen Server zu erhalten
 Anpassung verschiedener Module
 Neue Module umsetzen
@@ -67,17 +58,18 @@ PC einrichten für neuen Mitarbeiter
 Circle Animation anpassen
 Docker updaten und debugging von Deployment Problemen
 Aufwandsabschätzungen
-HTML5 Banner
 Programmierung einer Upload Schnittstelle
 Aufsetzen eines Testserver
 Bug Fixing
 Pimcore Localhost Mail einrichten und testen
 Ergänzung der Meta-Navigation für einen Kunden
-Typo3 Deployment umgebung aufsetzen und testen
+Deployment umgebung aufsetzen und testen
 HTML 5 Banner
 Multi Language Content Pflege
-Server aufräumen (Dateien von Backups löschen, etc)
+Server aufräumen
 Recherche
-Content Anpassung bei Firmen Website
-Schreiben des Berichtsheftes
+Content Anpassung
 Delete Funktion mit rekursivem Löschen
+Skelleton aufsetzen
+Livegang
+Responsive umsetzen

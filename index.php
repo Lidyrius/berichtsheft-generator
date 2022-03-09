@@ -1,58 +1,31 @@
-<?php
-
-use setasign\Fpdi\Fpdi;
-
-include('FPDF/fpdf.php');
-include('FPDI/autoload.php');
-include('GRID/grid.php');
-
-
-$pdf = new PDF_Grid();
-
-$pdf->AddPage();
-
-
-try {
-    $pdf->setSourceFile('templatedoc.pdf');
-} catch (\setasign\Fpdi\PdfParser\PdfParserException $e) {
-}
-
-$tplIdx = $pdf->importPage(1);
-
-$pdf->useTemplate($tplIdx, 0, 0, null,null,true);
-
-$pdf->SetFont('Arial');
-$pdf->SetFontSize(5);
-$pdf->SetTextColor(0,0,0);
-//$pdf->SetXY(29.2, 76);
-//$pdf->Write(0, "This is just a simple text");
-//
-//$pdf->SetXY(29.2, 81);
-//$pdf->Write(0, "This is just a simple text");
-//
-//$pdf->SetXY(29.2, 86);
-//$pdf->Write(0, "This is just a simple text");
-//echo "Breite: ".$pdf->GetPageWidth();
-//echo "<br>";
-//echo "Höhe: ".$pdf->GetPageHeight();
-
-$XPos = 0;
-$YPos = 0;
-for ($y = 0; $y <= 270; $y++) {
-    if ($y == $YPos) {
-        for ($x = 0; $x <= 190; $x++) {
-            if ($x == $XPos) {
-                $pdf->SetXY($x, $y);
-                $pdf->Write(0, $x."/".$y);
-                $XPos = $XPos + 10;
-            }
-        }
-    }
-    if (fmod($y/10,1) == 0.0) {
-        $YPos = $YPos + 10;
-        $XPos = 0;
-    }
-}
-
-
-$pdf->Output('newpdf.pdf', 'D');
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/app.css">
+        <title>Berichtsheft Builder</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <form class="main-form" action="/get-doc.php">
+                <label for="beginning">Anfangsdatum (Montag!)</label>
+                <input type="date" name="beginning" id="beginning" required>
+                <label for="ending">Enddatum</label>
+                <input type="date" name="ending" id="ending" required>
+                <label for="week">Start Nr (Woche)</label>
+                <input type="text" name="week" id="week" required>
+                <br>
+                <button type="submit" name="button" id="button">
+                    Berichtsheft erstellen
+                </button>
+            </form>
+        </div>
+        <form class="grid-form" action="/get-grid.php">
+            <button type="submit" name="button" id="button">
+                Template mit Grid
+            </button>
+        </form>
+    </body>
+</html>
