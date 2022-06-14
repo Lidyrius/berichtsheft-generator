@@ -1,11 +1,5 @@
 version: '3.3'
 services:
-    berichtsheft-generator-mariadb:
-        environment:
-            - MARIADB_ROOT_PASSWORD=root
-        ports:
-            - '3306:3306'
-        image: 'mariadb:latest'
     php-apache-dev:
         volumes:
             - '.:/app'
@@ -20,9 +14,3 @@ services:
         links:
             - 'DB:db'
         image: 's8n02/php-apache-dev-imagemagick'
-    phpmyadmin:
-        links:
-            - 'DB:db'
-        ports:
-            - '8080:80'
-        image: phpmyadmin
