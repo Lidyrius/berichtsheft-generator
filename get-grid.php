@@ -24,17 +24,6 @@ $pdf->useTemplate($tplIdx, 0, 0,);
 $pdf->SetFont('Arial');
 $pdf->SetFontSize(5);
 $pdf->SetTextColor(0,0,0);
-//$pdf->SetXY(29.2, 76);
-//$pdf->Write(0, "This is just a simple text");
-//
-//$pdf->SetXY(29.2, 81);
-//$pdf->Write(0, "This is just a simple text");
-//
-//$pdf->SetXY(29.2, 86);
-//$pdf->Write(0, "This is just a simple text");
-//echo "Breite: ".$pdf->GetPageWidth();
-//echo "<br>";
-//echo "Höhe: ".$pdf->GetPageHeight();
 
 $XPos = 0;
 $YPos = 0;

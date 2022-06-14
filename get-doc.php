@@ -75,9 +75,13 @@ function writePDF($week, $timestamp, $pdf) {
     } catch (\setasign\Fpdi\PdfParser\PdfParserException $e) {
     }
 
+
     $tplIdx = $pdf->importPage(1);
 
     $pdf->useTemplate($tplIdx, 0, 0,);
+
+
+    //Start Editing the Doc
 
     $pdf->SetFont('Arial');
     $pdf->SetFontSize(11.5);
@@ -98,6 +102,8 @@ function writePDF($week, $timestamp, $pdf) {
     //Year
     $pdf->SetXY(180.6,39.85);
     $pdf->Write(0, $year);
+
+    //End Editing the Doc
 
     foreach ($contents as $key => $value) {
         //Content Bullet Point
