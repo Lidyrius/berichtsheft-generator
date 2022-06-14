@@ -23,7 +23,7 @@ Wenn ihr wollt könnt ihr aber auch erstmal Testdaten eintragen und euch das Gri
 Um eure Tätigkeiten als Rainbow List einzuträgen müsst ihr die `liste.txt` bearbeiten
 und tätigkeiten bitte mit einem Zeilenumbruch trennen.
 
-Einfach` Anfangsdatum` und `Enddatum` auswählen, `Startnummer` eintragen und lets go.
+Einfach `Anfangsdatum` und `Enddatum` auswählen, `Startnummer` eintragen und lets go.
 
 ## Neue Koordinaten zuweisen
 
