@@ -10,7 +10,4 @@ services:
             - PHP_DISPLAY_ERRORS=1
         ports:
             - '80:80'
-            - '443:443'
-        links:
-            - 'DB:db'
         image: 's8n02/php-apache-dev-imagemagick'
